@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f4f4f4; /* Adds a light gray background color */
+      }
+
+      .grid-container {
+        cursor:pointer;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(50px, 2fr));
+        gap: 30px;
+        padding: 20px;
+        justify-content: center;
+      }
+
+      .card {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        text-align: center;
+        transition: transform 0.3s ease;
+        border-radius: 10px; /* Adds rounded corners to the cards */
+        overflow: hidden; /* Ensures the image and the box shadow don't spill out of the rounded corners */
+        background-color: #fff; /* Adds a white background color to the cards */
+      }
+
+      .card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Increases the box shadow size when hovered over */
+      }
+
+      .card img {
+        width: 100%;
+        height: auto;
+      }
+
+      .title {
+        color: #333;
+        font-size: 18px;
+        margin-top: 10px;
+      }
+
+      .btn {
+        border: none;
+        outline: none;
+        display: inline-block;
+        padding: 8px 16px;
+        background-color: #007bff;
+        color: white;
+        text-align: center;
+        text-decoration: none;
+        font-size: 18px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+        border-radius: 5px; /* Adds rounded corners to the buttons */
+      }
+
+      .btn:hover {
+        background-color: #0056b3;
+      }
+   
+      a {
+        text-decoration: none;
+        color: inherit;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="grid-container">
+      <div class="grid-item">
+        <div class="card">
+          <img src="{% static "images/admin.png" %}" alt="Admin">
+          <p class="title">ADMIN</p>
+          <p><a href="/adminclick" class="btn">View</a></p>
+        </div>
+      </div>
+
+      <div class="grid-item">
+        <div class="card">
+          <img src="{% static "images/doctor.png" %}" alt="Doctor">
+          <p class="title">DOCTOR</p>
+          <p><a href="/doctorclick" class="btn">View</a></p>
+        </div>
+      </div>
+
+      <div class="grid-item">
+        <div class="card">
+          <img src="{% static "images/patient.jpg" %}" alt="Patient">
+          <p class="title">PATIENT</p>
+          <p><a href="/patientclick" class="btn">View</a></p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+    <style type="text/css">
+      .bs-example {
+        margin: 0px;
+      }
+
+      .navbar-nav {
+        padding-left: 100px;
+        font-weight: bold;
+        font-size: 23px;
+        gap: 15px;
+        padding-right: 15px;
+      }
+
+      .navbar-brand {
+  font-size: 27px;
+  font-family: sans-serif;
+  padding-left: 50px;
+  font-weight: 700;
+  color: #fff; /* Changes the color of the text */
+  text-shadow: 1px 1px #000, 2px 2px #000, 3px 3px #000; /* Adds a 3D effect to the text */
+  transition: all 0.3s ease; /* Adds a transition effect for the hover animation */
+}
+
+.navbar-brand:hover {
+  color: #ffc107; /* Changes the color of the text when hovered over */
+  transform: scale(1.1); /* Scales the text up when hovered over */
+}
+      /* New styles */
+      .navbar {
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow to the navbar */
+        background: linear-gradient(90deg, #337ab7 0%, #be7df3 100%); /* Adds a gradient background */
+      }
+
+      .nav-item {
+        transition: all 0.3s ease; /* Adds a transition effect when hovering over nav items */
+      }
+
+      .nav-item:hover {
+        transform: scale(1.1); /* Scales nav items up when hovered over */
+        color: #fff; /* Changes the color of the text when hovered over */
+      }
+
+      .navbar-dark .navbar-nav .nav-link {
+        color: rgba(255, 255, 255, 0.8); /* Changes the color of the nav links */
+      }
+
+      .navbar-dark .navbar-nav .nav-link:hover {
+        color: rgba(255, 255, 255, 1); /* Changes the color of the nav links when hovered over */
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="bs-example">
+      <nav
+        class="navbar navbar-expand-md navbar-dark fixed-top"
+      >
+        <a href="/" class="navbar-brand">Health Assist</a>
+        <button
+          type="button"
+          class="navbar-toggler"
+          data-toggle="collapse"
+          data-target="#navbarCollapse"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div
+          class="collapse navbar-collapse justify-content-between"
+          id="navbarCollapse"
+        >
+          <div class="navbar-nav">
+            <a href="/adminclick" class="nav-item nav-link">Admin</a>
+            <a href="/doctorclick" class="nav-item nav-link">Doctor</a>
+            <a href="/patientclick" class="nav-item nav-link">Patient</a>
+          </div>
+
+          <div class="navbar-nav">
+            <a href="/aboutus" class="nav-item nav-link">About Us</a>
+            <a href="/contactus" class="nav-item nav-link">Contact Us</a>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </body>
+</html>

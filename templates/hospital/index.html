@@ -1,0 +1,81 @@
+{% extends 'hospital/homebase.html' %} {% load static %} {% block content %}
+
+<head>
+  <style media="screen">
+    .jumbotron {
+  margin-top: 0;
+  margin-bottom: 0;
+  background-image: url('{% static "images/bg.jpg" %}');
+  background-size: cover; /* Changed from contain to cover */
+  background-repeat: no-repeat;
+  background-position: center;
+  width:100vw;
+  height:100vh;
+  display: flex;
+  margin-top: 40px;
+  flex-direction: column;
+  justify-content: center; /* Aligns items along the vertical axis to the start */
+  align-items: flex-start; /* Aligns items along the horizontal axis to the start */
+  text-align: left; /* Aligns text to the left */
+}
+
+    .jumbotron h5,
+    h3 {
+      color: #fff; /* Added color */
+    }
+
+    .glow {
+      font-size: 50px;
+      color: white;
+      text-align: center;
+      -webkit-animation: glow 1s ease-in-out infinite alternate;
+      -moz-animation: glow 1s ease-in-out infinite alternate;
+      animation: glow 1s ease-in-out infinite alternate;
+    }
+
+    .headingbutton {
+      margin-right:10px;
+      width:550px;
+      font-size:40px;
+      color: #fff; /* Added color */
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Added text shadow */
+    }
+
+    .headingbuttonclass {
+      display:flex;
+      flex-direction:column;
+      align-items: center; /* Changed from flex-start to center */
+      gap:50px;
+    }
+
+    .bookbtn {
+      display: flex;
+      justify-content: center; /* Added to center the button */
+    }
+
+    .btn-primary {
+      background-color: #9554b3; /* Changed button color */
+      border: none;
+    }
+
+    .btn-primary:hover {
+      background-color: #ff4da6; /* Changed button hover color */
+    }
+  </style>
+</head>
+
+<div class="jumbotron">
+  <h5 class="display-3 glow">Leading the way to a healthier tomorrow</h5>
+  <div class="headingbuttonclass">
+    <h3 class="headingbutton">
+      Feeling Under the Weather? Book Your Appointment Hassle-Free
+    </h3>
+    <p class="bookbtn">
+      <a class="btn btn-primary btn-lg" href="/patientclick" role="button">Book Appointment</a>
+    </p>
+  </div>
+</div>
+
+{% include "hospital/admin_doctor_patient_card.html" %}
+
+{% endblock content %}git

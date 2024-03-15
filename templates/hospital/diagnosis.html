@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Disease Diagnosis</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;  /* Light background */
+        }
+
+        .container {
+            width: 600px;
+            margin: 50px auto;
+            border-radius: 5px;
+            background-color: #fff;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+        }
+
+        h1 {
+            margin-bottom: 20px;
+            font-size: 20px;
+            color: #333;  /* Darker text color */
+        }
+
+        textarea {
+            width: 100%;  /* Fills container width */
+            padding: 10px 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+            margin-bottom: 10px;
+            background-color: #eee;
+            box-sizing: border-box;  /* Include padding and border in width */
+        }
+
+        .result {
+            margin-top: 20px;
+            font-weight: bold;
+            color: #38b000;  /* Green for result text */
+        }
+
+        /* Responsive adjustments (optional): */
+        @media (max-width: 768px) {
+            .container {
+                width: 90%;
+            }
+        }
+
+        /* Aesthetic color scheme (optional): */
+        .container {
+            border-color: #ddd;  /* Light border for container */
+        }
+
+        h1 {
+            color: #007bff;  /* Blue for heading */
+        }
+
+        .result {
+            color: #28a745;  /* Green for result with a different shade */
+        }
+
+        button {
+            background-color: #007bff;  /* Blue for button */
+            color: #fff;  /* White text for button */
+            border: none;
+            border-radius: 5px;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #0062cc;  /* Darken button on hover */
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Disease Diagnosis</h1>
+
+        <form method="post"  >
+            {% csrf_token %}
+            <textarea id="text" name="text" rows="5" placeholder="Enter your symptoms"></textarea>
+            <br>
+          <a href="diagnosis_result"> <button type="submit" >Diagnose</button>
+          </a> 
+        </form>
+        
+        <div class="result">
+            <p id="diagnosis">{{ diagnosis }}</p>
+        </div>
+    </div>
+    <script>
+        const diagnosisElement = document.getElementById('diagnosis');
+        function updateDiagnosis(disease) {
+            diagnosisElement.textContent = "You have mild disease";
+        }
+    </script>
+</body>
+</html>
