@@ -1,3 +1,11 @@
+There are 3 Branches/Module parts of our Project:
+
+1.HealthAssist
+
+2.VideoMeet
+
+3.Disease_Detection
+
 
 
 Health Assist:
