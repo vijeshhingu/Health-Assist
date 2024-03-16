@@ -1,8 +1,12 @@
 Health Assist:
 Health Assist is a medical website offering various features to streamline healthcare processes and enhance patient care. It is mainely divided into 4 parts:
+
 1.Disease Prediction using Image preocessing (here MRI scans, X-rays,microscopy images are used)
+
 2.Disease Prediction using Patient's symptons
+
 3.A Hospital Management system having 3 Admin, Patient , Doctor 
+
 4. A video conferencing platform for doctor and patient it also have the facility to upload files and use a whiteboard
 
 Admin:
