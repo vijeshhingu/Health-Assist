@@ -35,12 +35,19 @@ Doctor:
 
 Tech-Stack Used: 
 -Back-End Development:  Flask, Django, MongoDB
+
 -Front-End Development: HTML, CSS, ReactJs,
+
 -Deep Learning: Transfer Learning (ResNet-50, InceptionV3,
+
 -AlexNet, and VGG19)Convolutional Neural Networks
+
 -(CNN),TensorFlow
+
 -Data Science: NumPy, Pandas
+
 -Data Visualization: Confusion Matrix, Matplotlib, Seaborn
+
 -API used: WebRTC, Microsoft Phi-2
 
 
