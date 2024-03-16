@@ -23,6 +23,7 @@ Health Assist is a medical website offering various features to streamline healt
 
 
 3.A Hospital Management system having 3 Admin, Patient , Doctor 
+**Drive Link For All Models:https://drive.google.com/file/d/1N1QsnLWx3X9buDoVZbANWrExVc9A3A7y/view?usp=sharing (Owing to huge size)**
 
 ![Screenshot 2024-03-15 203614](https://github.com/adiitya24/Out_of_Bounds/assets/124274939/1571043a-4032-4c85-a95b-7940020a39e9)
 
