@@ -1,10 +1,4 @@
-There are 3 Branches/Module of our Projects
 
-1.HeathAssist:
-
-2.VideoMeet:
-
-3.Disease_Detection:
 
 Health Assist:
 Health Assist is a medical website offering various features to streamline healthcare processes and enhance patient care. It is mainely divided into 4 parts:
