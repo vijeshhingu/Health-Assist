@@ -1,7 +1,7 @@
 
 # ****Health Assist****
 
-
+ 
 Health Assist is a comprehensive medical website designed to revolutionize healthcare processes and elevate patient care. It offers a range of features aimed at improving diagnosis accuracy, facilitating seamless communication between patients and healthcare providers, and optimizing hospital management.
 
 
