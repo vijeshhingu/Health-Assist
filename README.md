@@ -133,9 +133,9 @@ BILL INVOICE
 
 ## **Tech-Stack Used:** 
 
-- Back-End Development:  Flask, Django, MongoDB
+- Back-End Development:  Flask, Django, SQL
 
-- Front-End Development: HTML, CSS, ReactJs,
+- Front-End Development: HTML, CSS, Bootstrap
 
 - Deep Learning: Transfer Learning (ResNet-50, InceptionV3,
 
