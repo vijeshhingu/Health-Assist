@@ -133,21 +133,21 @@ BILL INVOICE
 
 ## **Tech-Stack Used:** 
 
--Back-End Development:  Flask, Django, MongoDB
+- Back-End Development:  Flask, Django, MongoDB
 
--Front-End Development: HTML, CSS, ReactJs,
+- Front-End Development: HTML, CSS, ReactJs,
 
--Deep Learning: Transfer Learning (ResNet-50, InceptionV3,
+- Deep Learning: Transfer Learning (ResNet-50, InceptionV3,
 
--AlexNet, and VGG19)Convolutional Neural Networks
+- AlexNet, and VGG19)Convolutional Neural Networks
 
--(CNN),TensorFlow
+- (CNN),TensorFlow
 
--Data Science: NumPy, Pandas
+- Data Science: NumPy, Pandas
 
--Data Visualization: Confusion Matrix, Matplotlib, Seaborn
+- Data Visualization: Confusion Matrix, Matplotlib, Seaborn
 
--API used: WebRTC, Microsoft Phi-2
+- API used: WebRTC, Microsoft Phi-2
 
 
 ## PPT: 
